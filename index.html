@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,18 +12,24 @@
         <div class="centerContent">
             <div class="headWrapper">
                 <div class="titleWrapper">
-                    <h1>Title</h1>
+                    <h1><span>ADD</span><br>BOOK</h1>
                 </div>
             </div>
             <div class="mainWrapper">
                 <form>
                     <div class="searchWrapper">
-                        <label for="name" class="searchTitle">Title</label>
-                        <input type="text" id="name" class="searchInput">
-                        <label for="author" class="searchTitle">Author</label>
-                        <input type="text" id="author" class="searchInput">
-                        <label for="isbn" class="searchTitle">ISBN#</label>
-                        <input type="text" id="isbn" class="searchInput">
+                        <div class="bookTitleWrapper">
+                            <label for="name" class="searchTitle">Title</label>
+                            <input type="text" id="name" class="searchInput">
+                        </div>
+                        <div class="authorWrapper">
+                            <label for="author" class="searchTitle">Author</label>
+                            <input type="text" id="author" class="searchInput">
+                        </div>
+                        <div class="isbnWrapper">
+                            <label for="isbn" class="searchTitle">ISBN#</label>
+                            <input type="text" id="isbn" class="searchInput">
+                        </div>
                     </div>
                     <div class="submitWrapper">
                         <input type="submit" value="Submit">
