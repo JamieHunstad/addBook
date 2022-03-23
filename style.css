@@ -30,6 +30,10 @@ h1 span{
     color: white;
     font-weight: 600;
 }
+.mainWrapper{
+    display: flex;
+    justify-content: center;
+}
 .searchWrapper{
     display: grid;
     justify-content: center;
@@ -100,4 +104,10 @@ table {
     color: #AAA6C3;
     font-weight:100;
     font-family: OpenSans-Regular;
+}
+td {
+    font-size:14px;
+    font-weight:100;
+    text-align: center;
+    padding: 0px 10px;
 }

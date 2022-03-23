@@ -16,19 +16,19 @@
                 </div>
             </div>
             <div class="mainWrapper">
-                <form>
+                <form id="bookForm">
                     <div class="searchWrapper">
                         <div class="bookTitleWrapper">
-                            <label for="name" class="searchTitle">Title</label>
-                            <input type="text" id="name" class="searchInput">
+                            <label for="name" class="bookTitle">Title</label>
+                            <input type="text" id="name" class="bookInput" autocomplete="off">
                         </div>
                         <div class="authorWrapper">
-                            <label for="author" class="searchTitle">Author</label>
-                            <input type="text" id="author" class="searchInput">
+                            <label for="author" class="authorTitle">Author</label>
+                            <input type="text" id="author" class="authorInput" autocomplete="off">
                         </div>
                         <div class="isbnWrapper">
-                            <label for="isbn" class="searchTitle">ISBN#</label>
-                            <input type="text" id="isbn" class="searchInput">
+                            <label for="isbn" class="isbnTitle">ISBN#</label>
+                            <input type="text" id="isbn" class="isbnInput" autocomplete="off">
                         </div>
                     </div>
                     <div class="submitWrapper">
@@ -44,9 +44,10 @@
                         <th>ISBN#</th>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody id="bookList"></tbody>
             </table>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
