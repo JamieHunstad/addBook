@@ -21,6 +21,32 @@ UI.prototype.addBookToList = function(book) {
     list.appendChild(row) // HILIGHT APPEND CHILD
 }
 
+UI.prototype.showError = function(message){
+
+    let tableContainer = document.querySelector(".mainTable");
+    let bodyWrapper = document.querySelector(".centerContent");
+
+    let newDiv = document.createElement("div");
+
+    newDiv.className = "alert";
+
+    newDiv.appendChild(document.createTextNode(message));
+
+    bodyWrapper.insertBefore(newDiv,tableContainer);
+    
+    setTimeout(function(){
+        document.querySelector(".alert").remove();
+    }, 3000);
+
+
+}
+
+UI.prototype.clearFields = function (){
+    document.querySelector(".bookInput").value = "";
+    document.querySelector(".authorInput").value = "";
+    document.querySelector(".isbnInput").value = "";
+}
+
 document.getElementById("bookForm").addEventListener("submit", function(e){
     const bookTitle = document.querySelector(".bookInput").value;
     const authorTitle = document.querySelector(".authorInput").value;
@@ -30,7 +56,15 @@ document.getElementById("bookForm").addEventListener("submit", function(e){
 
     const ui = new UI();
 
-    ui.addBookToList(book);
+
+    if (bookTitle === "" || authorTitle === "" || isbnTitle === ""){
+
+        ui.showError("This shit aint workin");
+
+    } else {
+        ui.addBookToList(book);
+        ui.clearFields();
+    }
 
 
     e.preventDefault();

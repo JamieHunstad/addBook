@@ -71,16 +71,19 @@ h1 span{
     height:20px;
     background: #433C5C;
     border: none;
+    color: white;
 }
 .authorWrapper input{
     height:20px;
     background: #433C5C;
     border: none;
+    color: white;
 }
 .isbnWrapper input{
     height:20px;
     background: #433C5C;
     border: none;
+    color: white;
 }
 .submitWrapper{
     margin-top: 30px;
@@ -110,4 +113,10 @@ td {
     font-weight:100;
     text-align: center;
     padding: 0px 10px;
+}
+.alert{
+    color: red;
+    text-align: center;
+    position: relative;
+    top: 10px;
 }
