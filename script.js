@@ -21,7 +21,7 @@ class UI {
             <td><a href="#" class="delete">X</td>
         ` //HILIGHT INNERHTML
     
-        list.appendChild(row) // HILIGHT APPEND CHILD
+        list.appendChild(row) 
     }
 
     showError(message) {

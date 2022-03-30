@@ -120,3 +120,7 @@ td {
     position: relative;
     top: 10px;
 }
+td a {
+    text-decoration: none;
+    color: #F28A8A;
+}
